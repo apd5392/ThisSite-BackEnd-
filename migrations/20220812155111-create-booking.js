@@ -14,7 +14,7 @@ module.exports = {
         field: "user_Id",
         onDelete: "CASCADE",
         references: {
-          model: "user",
+          model: "users",
           key: "id",
         }
       },
@@ -24,7 +24,7 @@ module.exports = {
         field: "location_Id",
         onDelete: "CASCADE",
         references: {
-          model: "location",
+          model: "locations",
           key: "id",
         },
       },
