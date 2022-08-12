@@ -8,8 +8,6 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Booking.hasMany(models.User, { foreignKey: "user_Id" });
-      Booking.hasMany(models.Location, { foreignKey: "location_Id" });
 
     }
   }
@@ -19,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         onDelete: "CASCADE ",
         references: {
-          model: "user",
+          model: "users",
           key: "id",
         },
       },
@@ -27,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         onDelete: "CASCADE",
         references: {
-          model: "location",
+          model: "locations",
           key: "id",
         },
       },
