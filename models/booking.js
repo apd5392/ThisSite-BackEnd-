@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
           key: "id",
         },
       },
-      payment: DataTypes.STRING,
+      payment: DataTypes.JSON,
     },
     {
       sequelize,
