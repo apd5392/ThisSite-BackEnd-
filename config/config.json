@@ -1,0 +1,17 @@
+{
+  "development": {
+    "database": "thisSite",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "database": "thisSite",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "database": "thisSite",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
