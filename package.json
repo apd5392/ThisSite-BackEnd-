@@ -1,0 +1,24 @@
+{
+  "name": "ThisSite-BackEnd-",
+  "version": "1.0.0",
+  "description": "![Logo](https://i.imgur.com/ozgtwMJ.jpg) # .ThisSite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apd5392/ThisSite-BackEnd-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apd5392/ThisSite-BackEnd-/issues"
+  },
+  "homepage": "https://github.com/apd5392/ThisSite-BackEnd-#readme",
+  "dependencies": {
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.3"
+  }
+}
