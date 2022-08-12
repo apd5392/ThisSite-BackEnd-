@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     email: DataTypes.STRING,
     phoneNumber: DataTypes.STRING,
     password: DataTypes.STRING,
-    creditCardInfo: DataTypes.ARRAY(DataTypes.String)
+    creditCardInfo: DataTypes.ARRAY(DataTypes.JSON)
   }, {
     sequelize,
     modelName: 'User',
