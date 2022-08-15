@@ -39,9 +39,8 @@ const hostLocation = async (req, res)=>{
             price: req.body.price,
             availability: available
         })
-
         res.send(location)
-        
+
     } catch (error) {
         throw error
     }
