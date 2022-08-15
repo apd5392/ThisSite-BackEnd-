@@ -22,7 +22,9 @@
   "dependencies": {
     "@ngneat/falso": "^6.1.0",
     "body-parser": "^1.20.0",
+    "cloudinary": "^1.30.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "pg": "^8.7.3",
     "sequelize": "^6.21.3"
