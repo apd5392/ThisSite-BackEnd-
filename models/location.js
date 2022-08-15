@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Location.belongsTo(models.User, { foreignKey: "user_Id" });
+      Location.belongsTo(models.User, { foreignKey: "user_Id" , as: "host"});
       Location.hasMany(models.Comment, { foreignKey: "location_Id" });
       Location.belongsToMany(models.User, {through: models.Booking, as: 'booked-location', foreignKey: "location_Id" });
     }
