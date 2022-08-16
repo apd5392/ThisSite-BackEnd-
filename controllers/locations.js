@@ -51,5 +51,8 @@ const hostLocation = async (req, res) => {
 module.exports = {
   getAllLocations,
   getLocationById,
-  hostLocation
+  hostLocation,
+  updateLocation,
+  deleteLocation,
+  getUserHostedLocations
 }
