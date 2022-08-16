@@ -8,16 +8,16 @@ const AppRouter = require('./routes/AppRouter')
 const PORT = process.env.PORT || 3001
 
 app.use(cors())
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
-app.use(bodyParser.json({ limit: '150mb' }))
+
+app.use(bodyParser.json({ limit: '250mb' }))
 app.use(
   bodyParser.urlencoded({
-    limit: '150mb',
+    limit: '250mb',
     extended: true,
     parameterLimit: 50000
   })
 )
+app.use(express.json())
 
 app.use('/api', AppRouter)
 app.get('/', (req, res) => res.json({ message: 'Server Works' }))
