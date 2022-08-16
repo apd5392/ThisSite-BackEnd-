@@ -4,7 +4,10 @@ const { cloudinary } = require('../utils/cloudinary.js')
 const getAllLocations = async (req, res) => {
   try {
     const locations = await Location.findAll({
-      include: [{ model: User, as: 'host' }]
+      include: [
+        { model: User, as: 'host' },
+        { model: Comment, include: [{ model: User, as: 'comment-creator' }] }
+      ]
     })
     res.send(locations)
   } catch (error) {
@@ -40,9 +43,9 @@ const getUserHostedLocations = async (req, res) => {
 const hostLocation = async (req, res) => {
   try {
     let imgUrls = []
-    const { data, userId, address, description, price } = req.body
-    for (let i = 0; i < data.length; i++) {
-      const uploadedRes = await cloudinary.uploader.upload(data[i], {
+    const { images, userId, address, description, price } = req.body
+    for (let i = 0; i < images.length; i++) {
+      const uploadedRes = await cloudinary.uploader.upload(images[i], {
         upload_preset: 'ThisSite'
       })
       const url = uploadedRes.url
