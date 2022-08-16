@@ -34,15 +34,13 @@ const hostLocation = async (req, res)=>{
     try {
         let imgUrls = [];
         const {data, userId, address, description, price} = req.body
-        const imgStr = data
-        imgStr.map(async(str)=>{
-            const uploadedRes = await cloudinary.uploader.upload(str, {
+        for(let i = 0; i<data.length; i++){
+            const uploadedRes = await cloudinary.uploader.upload(data[i], {
                 upload_preset: 'ThisSite'
             })
             const url = uploadedRes.url
             imgUrls.push(url)
-        })
-
+        }
         const location = await Location.create({
             user_Id: userId,
             images: imgUrls,
