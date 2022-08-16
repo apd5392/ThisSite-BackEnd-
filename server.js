@@ -10,10 +10,10 @@ const PORT = process.env.PORT || 3001
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(bodyParser.json({ limit: '50mb' }))
+app.use(bodyParser.json({ limit: '150mb' }))
 app.use(
   bodyParser.urlencoded({
-    limit: '50mb',
+    limit: '150mb',
     extended: true,
     parameterLimit: 50000
   })

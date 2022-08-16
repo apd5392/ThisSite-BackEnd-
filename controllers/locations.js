@@ -34,13 +34,14 @@ const hostLocation = async (req, res)=>{
     try {
         let imgUrls = [];
         const {images, userId, address, description, price} = req.body
-        for(let i = 0; i<images.length; i++){
+
+        for(let i = 0; i < images.length; i++){
             const uploadedRes = await cloudinary.uploader.upload(images[i], {
                 upload_preset: 'ThisSite'
             })
-            const url = uploadedRes.url
-            imgUrls.push(url)
+            imgUrls.push(uploadedRes.url)
         }
+
         const location = await Location.create({
             user_Id: userId,
             images: imgUrls,
