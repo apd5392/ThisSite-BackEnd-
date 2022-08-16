@@ -6,7 +6,7 @@ const getAllLocations = async (req, res) => {
     const locations = await Location.findAll({
       include: [
         { model: User, as: 'host' },
-        { model: Comment, include: [{ model: User, as: 'comment-creator' }] }
+        { model: Comment, include: [{ model: User, as: 'commentCreator' }] }
       ]
     })
     res.send(locations)
@@ -21,7 +21,7 @@ const getLocationById = async (req, res) => {
     const location = await Location.findByPk(id, {
       include: [
         { model: User, as: 'host' },
-        { model: Comment, include: [{ model: User, as: 'comment-creator' }] }
+        { model: Comment, include: [{ model: User, as: 'commentCreator' }] }
       ]
     })
     res.send(location)

@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       User.hasMany(models.Location, { as:'host', foreignKey: "user_Id" });
       User.belongsToMany(models.Location,{through:models.Booking, as: 'customer', foreignKey: "user_Id" });
-      User.hasMany(models.Comment, { as:'comment-creator', foreignKey: "user_Id" });
+      User.hasMany(models.Comment, { as:'commentCreator', foreignKey: "user_Id" });
     }
   }
   User.init(
