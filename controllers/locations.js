@@ -88,6 +88,7 @@ const deleteLocation = async (req, res) => {
   try {
     const { id } = req.params
     await Location.destroy({ where: { id: id } })
+    res.send({message: `Location with id ${id} has been deleted`})
   } catch (error) {
     throw error
   }

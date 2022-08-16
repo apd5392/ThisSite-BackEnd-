@@ -35,7 +35,7 @@ const updateUser = async ()=>{
 const deleteUser = async ()=>{
     const {id}=req.params
     await User.destroy({where: {id: id}})
-    res.send({message: `User with id of ${id} deleted`})
+    res.send({message: `User with id ${id} has been deleted`})
 }
 
 module.exports = {
