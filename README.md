@@ -20,6 +20,25 @@
 
 [Heroku]()
 
+#### **Required Installs**
+BackEnd:
+* npm i
+* npm i sequelize
+* npm cors 
+* npm express
+* npm i body_parser
+* npm i @ngneat/falso
+* npm i cloudinary
+* npm i nodemon
+* npm i dotenv
+
+FrontEnd:
+* npm i
+* npm i axios
+* npm i express
+* npm i react-router-dom
+
+
 ---
 
 ## **Technology Used**
