@@ -9,4 +9,5 @@ Router.put('/:id', controller.updateLocation)
 Router.delete('/:id', controller.deleteLocation)
 
 
+
 module.exports = Router
