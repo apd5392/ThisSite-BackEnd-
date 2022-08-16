@@ -1,0 +1,82 @@
+[
+  {
+    "userName": "mariat",
+    "firstName": "Maria",
+    "lastName": "Trujillo",
+    "email": "mariat@fake.com",
+    "phoneNumber": "(445)-456-7350",
+    "password": "password"
+  },
+  {
+    "userName": "juan4",
+    "firstName": "Juan",
+    "lastName": "Sanchez",
+    "email": "s.juan@fake.com",
+    "phoneNumber": "(137)-467-3535",
+    "password": "password"
+  },
+  {
+    "userName": "martinez31",
+    "firstName": "David",
+    "lastName": "Martinez",
+    "email": " d.martinez31@fake.com",
+    "phoneNumber": "(534)-343-6543",
+    "password": "password"
+  },
+  {
+    "userName": "jeffsky5",
+    "firstName": "Skylar",
+    "lastName": "Jefferson",
+    "email": "sky_jefferson@fake.com",
+    "phoneNumber": "(253)-453-2435",
+    "password": "password"
+  },
+  {
+    "userName": "parkk34",
+    "firstName": "Park",
+    "lastName": "Kim",
+    "email": "parkk34@fake.com",
+    "phoneNumber": "(975)-345-8865",
+    "password": "password"
+  },
+  {
+    "userName": "tbadwin24",
+    "firstName": "Tyana",
+    "lastName": "Baldwin",
+    "email": "tbaldwin@fake.com",
+    "phoneNumber": "(532)-353-3544",
+    "password": "password"
+  },
+  {
+    "userName": "chey234",
+    "firstName": "Cheyenne",
+    "lastName": "Hoffman",
+    "email": "chey_h35@fake.com",
+    "phoneNumber": "(235)-987-2234",
+    "password": "password"
+  },
+  {
+    "userName": "fran34",
+    "firstName": "Franco",
+    "lastName": "Escamilla",
+    "email": " f.escamilla@fake.com",
+    "phoneNumber": "(345)-765-2456",
+    "password": "password"
+  },
+  {
+    "userName": "scott09",
+    "firstName": "Scott",
+    "lastName": "Dale",
+    "email": "scott09@fake.com",
+    "phoneNumber": "(645)-254-0977",
+    "password": "password"
+  },
+  {
+    "userName": "howard.d",
+    "firstName": "Dwight",
+    "lastName": "Howard",
+    "email": "d.howard@fake.com",
+    "phoneNumber": "(345)-877-3345",
+    "password": "password"
+  }
+]
