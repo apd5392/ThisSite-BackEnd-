@@ -30,6 +30,8 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
       payment: DataTypes.JSON,
+      start_date: DataTypes.STRING,
+      end_date: DataTypes.STRING,
     },
     {
       sequelize,
