@@ -26,7 +26,18 @@ try{
 }
 }
 
+const updateUser = async ()=>{
+    const {id}=req.params
+    const user = await User.update(req.body, {where:{id: id}, returning: true})
+    res.send(user)
+}
+
+const deleteUser = async ()=>{
+    const {id}=req.params
+    await User.destroy({where: {id: id}})
+    res.send({message: `User with id of ${id} deleted`})
+}
 
 module.exports = {
-    createUser, login
+    createUser, login, updateUser, deleteUser
 }
