@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Location.belongsTo(models.User, { foreignKey: "user_Id" , as: "host"});
       Location.hasMany(models.Comment, { foreignKey: "location_Id" });
-      Location.belongsToMany(models.User, {through: models.Booking, as: 'booked-location', foreignKey: "location_Id" });
+      Location.belongsToMany(models.User, {through: models.Booking, as: 'bookedLocation', foreignKey: "location_Id" });
     }
   }
   Location.init(
