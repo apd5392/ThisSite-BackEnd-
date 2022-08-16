@@ -18,6 +18,8 @@ app.use(
     parameterLimit: 50000
   })
 )
-app.get('/', (req, res) => res.json({ message: 'Server Works' }))
+
 app.use('/api', AppRouter)
+app.get('/', (req, res) => res.json({ message: 'Server Works' }))
+
 app.listen(PORT, () => console.log(`Server Started On Port: ${PORT}`))

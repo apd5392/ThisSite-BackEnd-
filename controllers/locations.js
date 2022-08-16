@@ -1,9 +1,9 @@
-const {User, Location}=require('../models')
+const {User, Location, Comment}=require('../models')
 const {cloudinary} = require('../utils/cloudinary.js')
 
 const getAllLocations = async (req,res)=>{
     try{
-        const locations = await Location.findAll({include: [{model: User, as: 'host'}]})
+        const locations = await Location.findAll({include: [{model: User, as: 'host'},{model: Comment, include:[{model: User, as: 'comment-creator'}]}]})
         res.send(locations)
     }catch(error){
         throw error
@@ -13,7 +13,7 @@ const getAllLocations = async (req,res)=>{
 const getLocationById = async (req, res)=>{
     try {
         const id = req.params.id
-        const location = await Location.findByPk(id, {include: [{model: User, as: 'host'}]})
+        const location = await Location.findByPk(id, {include: [{model: User, as: 'host'},{model: Comment, include:[{model: User, as: 'comment-creator'}]}]})
         res.send(location)
     } catch (error) {
         throw error
