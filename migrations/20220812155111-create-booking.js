@@ -31,8 +31,8 @@ module.exports = {
       payment: {
         type: Sequelize.JSON,
       },
-      start_date: Sequelize.DATE,
-      end_date: Sequelize.DATE,
+      start_date: Sequelize.DATEONLY,
+      end_date: Sequelize.DATEONLY,
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
