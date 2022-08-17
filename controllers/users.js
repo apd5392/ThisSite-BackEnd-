@@ -1,13 +1,26 @@
 const {User, Location} = require('../models')
+const middleware = require('../middleware')
 
 const createUser = async (req, res) =>{
     try{
-        const user = await User.create(req.body)
+
+        const {userName, firstName, lastName, email, phoneNumber, password} = req.body
+
+        const passwordDigest = await middleware.hashPassword(password)
+
+        const user = await User.create({
+            userName: userName,
+            firstName: firstName,
+            lastName: lastName,
+            email:email,
+            phoneNumber:phoneNumber,
+            password:passwordDigest
+        })
 
        setTimeout(async() => {
          const userInfo = await User.findByPk(user.id, {include: [{model: Location, as: "host"}]})
          res.send(userInfo)
-       }, 1000)
+       }, 1500)
        
     }catch(error){
     throw error
@@ -18,14 +31,21 @@ const login = async (req, res) =>{
 try{    
     const user = await User.findOne({where:{userName: req.body.userName}, include: [{model: Location, as: "host"}]})
 
-    if(!user){
-         res.send({message: "user does not exist"})
-    }else{
-        if(req.body.password === user.password){ 
-            res.send(user)
-        }else{
-        res.send({message: "incorrect password"})
-    }}
+    if (
+        user &&
+        (await middleware.comparePassword(user.passwordDigest, req.body.password))
+      ) {
+        let payload = {
+        id: user.id,
+        userName: user.userName
+      }
+
+        let token = middleware.createToken(payload)
+        return res.send({ user: user, token,})
+      }
+
+      res.status(401).send({ status: 'Error', msg: 'Unauthorized' })
+
 }catch(error){
     throw error
 }
