@@ -9,7 +9,7 @@ const createUser = async (req, res) =>{
 }
 }
 
-const login = async () =>{
+const login = async (req, res) =>{
 try{    
     const user = await User.findOne({where:{userName: req.body.userName}})
 
@@ -26,13 +26,13 @@ try{
 }
 }
 
-const updateUser = async ()=>{
+const updateUser = async (req, res)=>{
     const {id}=req.params
     const user = await User.update(req.body, {where:{id: id}, returning: true})
     res.send(user)
 }
 
-const deleteUser = async ()=>{
+const deleteUser = async (req, res)=>{
     const {id}=req.params
     await User.destroy({where: {id: id}})
     res.send({message: `User with id ${id} has been deleted`})
