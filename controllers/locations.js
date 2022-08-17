@@ -54,11 +54,11 @@ try {
 } 
 
       if(cityandstate === ""){
+        if(unavailable !== null){
         locations = await Location.findAll({
           include: [{
             model: User,
             as: "bookedLocation",
-            through: {attributes: []}
           }],
           where: {
             [Op.not]: {
@@ -66,13 +66,19 @@ try {
             }
           }
         })
-
-      }else{
-        locations = await Location.findAll({
+}else{
+    locations = await Location.findAll({
+      include: [{
+        model: User,
+        as: "bookedLocation",
+      }]
+})}
+}else{
+        if(unavailable!==null){
+          locations = await Location.findAll({
           include: [{
             model: User,
-            as: "bookedLocation",
-            through: {attributes: []}
+            as: "bookedLocation"
           }],
           where: {[Op.and]:
             {[Op.not]: {
@@ -81,11 +87,20 @@ try {
           address: {[Op.iLike]: `%${cityandstate}%`}}
           }
         })
+      }else{
+        locations = await Location.findAll({
+          include: [{
+            model: User,
+            as: "bookedLocation"
+          }],
+          where: {address: {[Op.iLike]: `%${cityandstate}%`}}
+        })
       }
-
+}
       res.send(locations)
 },1000)
 
+res.send()
 } catch (error) {
   throw error
 }

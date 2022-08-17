@@ -41,7 +41,7 @@ try{
       }
 
         let token = middleware.createToken(payload)
-        return res.send({ user: user, token,})
+        return res.send({ user: user, token})
       }
 
       res.status(401).send({ status: 'Error', msg: 'Unauthorized' })
