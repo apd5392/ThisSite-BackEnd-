@@ -43,6 +43,25 @@ const getUserHostedLocations = async (req, res) => {
   }
 }
 
+const filterLocations = async (req, res)=>{
+try {
+    const {cityandstate, start_date, end_date} = req.body
+  
+    if(cityandstate === ""){
+      const locations = await Location.findAll({include: [{
+        model: User,
+        as: "bookedLocation",
+        where: {
+          start_date: {[Op.notBetween]:[start_date, end_date]},
+          end_date: {[Op.notBetween]:[start_date, end_date]}}
+      }]})
+    }
+  res.send(location)
+} catch (error) {
+  throw error
+}
+}
+
 const hostLocation = async (req, res) => {
   const imgUrls = []
   try {
@@ -100,5 +119,6 @@ module.exports = {
   hostLocation,
   updateLocation,
   deleteLocation,
-  getUserHostedLocations
+  getUserHostedLocations,
+  filterLocations,
 }

@@ -1,4 +1,4 @@
-const {User} = require('../models')
+const {User, Location} = require('../models')
 
 const createUser = async (req, res) =>{
     try{
@@ -11,7 +11,7 @@ const createUser = async (req, res) =>{
 
 const login = async (req, res) =>{
 try{    
-    const user = await User.findOne({where:{userName: req.body.userName}})
+    const user = await User.findOne({where:{userName: req.body.userName}, include: [{model: Location, as: "host"}]})
 
     if(!user){
          res.send({message: "user does not exist"})
