@@ -3,7 +3,12 @@ const {User, Location} = require('../models')
 const createUser = async (req, res) =>{
     try{
         const user = await User.create(req.body)
-        res.send(user)
+
+       setTimeout(async() => {
+         const userInfo = await User.findByPk(user.id, {include: [{model: Location, as: "host"}]})
+         res.send(userInfo)
+       }, 1000)
+       
     }catch(error){
     throw error
 }
