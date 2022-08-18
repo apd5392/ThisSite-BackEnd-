@@ -54,7 +54,7 @@ try {
 } 
 
       if(cityandstate === ""){
-        if(unavailable !== null){
+        if(unavailable.length>0){
         locations = await Location.findAll({
           include: [{
             model: User,
@@ -74,7 +74,7 @@ try {
       }]
 })}
 }else{
-        if(unavailable!==null){
+        if(unavailable>0){
           locations = await Location.findAll({
           include: [{
             model: User,
@@ -100,7 +100,6 @@ try {
       res.send(locations)
 },1000)
 
-res.send()
 } catch (error) {
   throw error
 }
