@@ -76,10 +76,9 @@ const filterLocations = async (req, res) => {
       if(cityandstate === ""){
         if(unavailable.length>0){
         locations = await Location.findAll({
-          include: [{
-            model: User,
-            as: "bookedLocation",
-          }],
+          include: [
+            { model: User, as: 'host' },
+            { model: Comment, include: [{ model: User, as: 'commentCreator' }] }],
 
           where: {
             [Op.not]: {
@@ -90,18 +89,16 @@ const filterLocations = async (req, res) => {
 
 }else{
     locations = await Location.findAll({
-      include: [{
-        model: User,
-        as: "bookedLocation",
-      }]
+      include: [
+        { model: User, as: 'host' },
+        { model: Comment, include: [{ model: User, as: 'commentCreator' }] }]
 })}
 }else{
         if(unavailable>0){
           locations = await Location.findAll({
-          include: [{
-            model: User,
-            as: "bookedLocation"
-          }],
+            include: [
+              { model: User, as: 'host' },
+              { model: Comment, include: [{ model: User, as: 'commentCreator' }] }],
           where: {[Op.and]:
             {[Op.not]: {
               id: unavailable
@@ -112,10 +109,9 @@ const filterLocations = async (req, res) => {
         })
       }else{
         locations = await Location.findAll({
-          include: [{
-            model: User,
-            as: "bookedLocation"
-          }],
+          include: [
+            { model: User, as: 'host' },
+            { model: Comment, include: [{ model: User, as: 'commentCreator' }] }],
           where: {address: {[Op.iLike]: `%${cityandstate}%`}}
         })
       }
