@@ -156,7 +156,7 @@ const hostLocation = async (req, res) => {
 const updateLocation = async (req, res) => {
   try {
     const { id } = req.params
-    Location.update(req.body, { where: { id: id }, returning: true })
+    const location = await Location.update(req.body, { where: { id: id }, returning: true })
 
     res.send(location)
   } catch (error) {

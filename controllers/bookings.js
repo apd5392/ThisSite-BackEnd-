@@ -1,4 +1,4 @@
-const { User, Booking, Location } = require('../models')
+const { Booking } = require('../models')
 const { Op } = require('sequelize')
 
 const createBooking = async (req, res) => {
