@@ -1,122 +1,212 @@
 [
-    {
-       
-       "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660570695/ThisSite/beachfront-tahoe1_mgavrf.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660570700/ThisSite/beachfront-tahoe2_axm7v2.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660570696/ThisSite/beachfront-tahoe3_s89hx7.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660570697/ThisSite/beachfront-tahoe4_hw8h7e.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660570698/ThisSite/beachfront-tahoe5_lqhci3.webp"],
-       "address": "143 Cambridge St., Zephyr Cove, Nevada",
-       "description": "This is a beautiful beachfront, 3 bedroom cozy family cabin/home located in Marla Bay Zephyr Cove. The bonus room is only available in the Summer months as there is no heat in this room. Breathtaking views of Lake Tahoe from the living room, bonus room, kitchen and master bedroom! Enjoy the two outside decks for relaxation and entertainment while feeling as if you are basically sitting in the water. Panoramic views of the West shore and full sunshine year-round. Beautiful sandy beach right out the back door.",
-       "price": 683,
-       "availability": "available"
-    },
-    {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660574979/ThisSite/LX20-Lake-Tahoe1_q8nga3.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660574978/ThisSite/LX20-Lake-Tahoe2_qwy8mi.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660574979/ThisSite/LX20-Lake-Tahoe3_n8tttq.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660574982/ThisSite/LX20-Lake-Tahoe4_ti93yh.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660574982/ThisSite/LX20-Lake-Tahoe5_pmegnr.webp"] ,
-        "address": "2233 Broadway St., Glenbrook, Nevada",
-        "description": "Located on the Shore of Lake Tahoe and 15 minutes to South Lake Tahoe perched on this majestic clear water lake is the perfect lakefront estate accommodating up to 10 guests. Lakefront LUXE 180 degrees view Luxury Lakefront Estate in this exclusive setting for the perfect privacy. This exceptional home has breathtaking views once described by Mark Twain! To breathe the same air as the angels, you must go to Tahoe. Brand new remodeled and designer mountain top retreat with mountain views available fully furnished in Stateline, Nevada." ,
-        "price": 1985,
-        "availability": "available"
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660576919/ThisSite/Lakefront-condo1_exvdvn.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660576917/ThisSite/Lakefront-condo2_yp9obj.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660576918/ThisSite/Lakefront-condo3_wyhxte.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660576918/ThisSite/Lakefront-condo4_h8kces.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660576918/ThisSite/Lakefront-condo5_mtaibl.webp"],
-        "address": "3574 Seventh Ave., Zephyr Cove, Nevada",
-        "description": "The perfect 1,700 square foot townhome steps away from a beach in a private community. Beautiful views of Lake Tahoe from the master bedroom and living room. The Lakefront Tahoe residence is in the gated Pinewild Community nestled in the pine trees near the crystal clear waters of Zephyr Cove, Nevada.",
-        "price": 422,
-        "availability": "available"
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660577475/ThisSite/lakefront-groveland1_tadsoa.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660577470/ThisSite/lakefront-groveland2_xrvwsm.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660577470/ThisSite/lakefront-groveland3_dqmno5.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660577475/ThisSite/lakefront-groveland4_ot0dzk.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660577471/ThisSite/lakefront-groveland5_cj4mgb.webp"] ,
-        "address": "2598 Third St., Groveland, California",
-        "description": "'Better At The Lake' is a lakefront home with a gorgeous view of the lake, private dock and 1-kayak.Swim from the dock! Located just 1/2-mile from Dunn Court Beach where you can stay & play or catch the seasonal water taxi & beach hop to the Marina Beach or Lake Lodge Beach! Just a 1/2-mile to community pool, country club, proshop, tennis courts",
-        "price": 558,
-        "availability": "available"
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660578218/ThisSite/twain-harte1_luktws.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578217/ThisSite/twain-harte2_sffvbe.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578218/ThisSite/twain-harte3_vnaqcb.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578213/ThisSite/twain-harte4_k18dmh.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578210/ThisSite/twain-harte5_yf5am3.webp"],
-        "address": "3254 First Ave., Twain Harte, California",
-        "description": "Luxury cabin perfect for large family gatherings, long getaways w/ friends, or peaceful mountain retreats. Enjoy the large Game Room to play pool, shuffle board & plenty to keep both Kids and Adults entertained! Beautiful deck surrounded by trees w/ a fun Fire Pit to take in the cabin vibes! Large kitchen w/ gas range, full appliances, and cute coffee supplies! Ideal for long stays. Tucked away 5 min from Downtown Twain Harte, 30 min to Pinecrest, 10 min to Black Oak Casino, & much more! Enjoy🌲",
-        "price": 272,
-        "availability": "available"
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660578675/ThisSite/waterfront-marina1_ei4qgm.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578672/ThisSite/waterfront-marina2_svkccf.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578674/ThisSite/waterfront-marina3_sqvyzm.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578675/ThisSite/waterfront-marina4_x3lrva.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578673/ThisSite/waterfront-marina5_zg8poe.webp"],
-        "address": "4644 River Dr., Discover Bay, California",
-        "description":"Great Property w/ dock In Discovery Bay. Enjoy oversized deck for entertaining family & friends. W/ private dock just minutes away from fast water fun! A private 6-person hot tub for relaxation. A 50A electrical vehicle charger for your convenience. Located near major shops, restaurant, & yacht clubs. Come enjoy your next retreat.",
-        "price": 243,
-        "availability": "available"
-     },
-     {
-       
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660579316/ThisSite/treehouse1_zgncie.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660579318/ThisSite/treehouse2_o96ldn.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660579321/ThisSite/treehouse3_btyisr.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660579321/ThisSite/treehouse4_oadsdo.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660579317/ThisSite/treehouse5_opvsk0.webp"],
-        "address": "3544 Bear Creek Cir., Sultan, Washington",
-        "description": "Fall asleep to the sounds of Bear Creek and views of towering hemlocks in this treehouse built within a grove of old growth. A massive deck 20’ up provides elevated creek views while private hiking trails lead to thousands of acres to explore. The cabin opens to the wilderness with a 9’ folding door and full glass custom shower. Making the most of this small footprint with a Smart projector, convertible sofa bed, and queen loft.",
-        "price": 303,
-        "availability": "available"
-     },
-     {
-       
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660578989/ThisSite/earthlight1_q1wl5i.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578985/ThisSite/earthlight2_wtbgpi.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578986/ThisSite/earthlight3_ox8p9n.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578986/ThisSite/earthlight4_pranx5.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660578986/ThisSite/earthlight5_gnrnhc.webp"] ,
-        "address": "3253 Earthlight Ave., Waterville, Washington ",
-        "description": "The villa on top of the world! Earthlight™ is built high atop Pioneer Ridge near Orondo, Washington. With sweeping views of the Columbia River, our unique homes are specifically designed to experience the combination of luxury living and the beauty of nature. Relax in our hot tub while watching the sun descend behind the snowy mountains. Explore our wild trekking paths in spring and summer, and snowshoe through the hills in winter. Watch the deer wander by. Earthlight™ has it all, and then some.",
-        "price": 450,
-        "availability": "available"
-     },
-     {
-       
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660579818/ThisSite/cabin-on-lake1_mqqkbv.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660579819/ThisSite/cabin-on-lake2_wa8t8d.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660579826/ThisSite/cabin-on-lake3_vhhlx8.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660579825/ThisSite/cabin-on-lake4_xze6ww.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660579820/ThisSite/cabin-on-lake5_gle1ik.webp"],
-        "address": "6455 Waterfront Cir., Tahuya, Washington",
-        "description": "Enjoy a relaxing couples' getaway or bring the whole family to our beautiful wooded lakefront A-frame on a quiet, private lake perfect for seasonal swimming, floating, boating, and fishing (May-Sept). Enjoy our waterfront firepit, hot tub, ample outdoor spaces with seating and dining, and our summer water toys including a pedal boat, floaties, & paddleboard. We offer high-speed internet and a small workspace to be remote work friendly and accommodate streaming and video calling.",
-        "price": 287,
-        "availability": "available"
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660580209/ThisSite/surfbound-retreat1_a3cj3d.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580207/ThisSite/surfbound-retreat2_kh4tf8.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580208/ThisSite/surfbound-retreat3_ranao9.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580210/ThisSite/surfbound-retreat4_yqgptu.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580209/ThisSite/surfbound-retreat5_gadsqp.webp"],
-        "address": "7855 Main st, Honolulu, Hawaii",
-        "description": "This modern studio was redesigned and redecorated with the help of my closest friends and family - with our guests at the center of our decisions. We wanted to create a space that allows you to have a dream vacation on Oahu! Parking is included, so your studio stay will be the perfect hub for your adventures on Oahu. Even without driving, some of Hawaii’s best beaches, shopping, and dining are all within walking distance: your paradise getaway awaits!",
-        "price": 125,
-        "availability": "available"
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660580827/ThisSite/chic-studio1_ivgqqq.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580827/ThisSite/chic-studio2_h5o7qc.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580829/ThisSite/chic-studio3_jwyq8h.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580829/ThisSite/chic-studio4_tm9upg.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580829/ThisSite/chic-studio5_z5oc9j.webp"],
-        "address": "7553 Main St., Honolulu, Hawaii",
-        "description": "Island Colony in Waikiki is one of the popular vacation accommodations on the island. 445 Seaside Ave is in the heart of Waikiki! You are just a block away from the famous International Market Place restaurants and mall! This lovely spacious studio has a very spacious lanai (balcony) that invites the fresh Hawaiian breeze. Just a 10-15 minute stroll is famous Waikiki Beach! Parking is available in adjacent parking garage for $35/day (rates are subject to change).",
-        "price": 180,
-        "availability": "available"
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660580568/ThisSite/mountain-view-condo1_jo8ikh.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580567/ThisSite/mountain-view-condo2_tn3qft.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580568/ThisSite/mountain-view-condo3_sc6duf.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580569/ThisSite/mountain-view-condo4_cfrnvl.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660580570/ThisSite/mountain-view-condo5_iomdyf.webp"],
-        "address": "2546 Main St., Honolulu, Hawaii",
-        "description": "Aloha! Our unit is located in the heart of Waikiki, just few minutes walk to the beach, markets, many restaurants, cafes and bars - everything is within walking distance. Enjoy your morning coffee, sunset dinners, evening cocktails and even shopping all along world famous Waikiki Beach. FREE PARKING is a Big Plus!",
-        "price": 173,
-        "availability": "available"
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660584436/ThisSite/miami-cottage1_e2lzds.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660584434/ThisSite/miami-cottage2_xvsoum.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660584435/ThisSite/miami-cottage3_gxciqi.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660584435/ThisSite/miami-cottage4_hspudy.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660584435/ThisSite/miami-cottage5_fwpkkd.webp"],
-        "address": "6553 Main Rd., Miami, Florida",
-        "description": "This beautifully renovated space includes a queen bed, small single sofa bed (x1 child), full bathroom and a kitchenette: small refrigerator, microwave, toaster, coffee pot & stove. Outside the space has a private porch for relaxing. Our guesthouse is completely separate from the main home w/ a private entrance. We open the following common areas for your enjoyment: pool & jacuzzi! Parking for 1 car. Perfect Miami home for couples, business travelers, friends, and small families.",
-        "price": 57,
-        "availability": "available" 
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660584753/ThisSite/charming-cottage1_coqsno.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660584752/ThisSite/charming-cottage2_tznqlf.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660584753/ThisSite/charming-cottage3_xxyo0b.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660584751/ThisSite/charming-cottage4_fb4rwf.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660584753/ThisSite/charming-cottage5_rzcucq.webp"],
-        "address": "2154 Main Rd., Miami, Florida",
-        "description": "Our cottage is located in a very quiet residential area, 15mn to the beach (Bal Harbor area).20mn from both Miami and Fort Lauderdale Airports, Located in the backyard of the main house but separate and with an independent entry. Enjoy our tropical garden and beautiful pool, in the back of our house. Share with owner only, we give priority to our guests to enjoy it! Parking available in our front yard. No kitchen but microwave and fridge. TV, cable and WIFI. It is suggested to have a car.",
-        "price": 102,
-        "availability": "available"
-     },
-     {
-        
-        "images": ["https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell1_gdcope.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell2_b9xydd.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell3_uhgfjs.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell4_szsgmw.webp","https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell5_qswtms.webp"],
-        "address": "8775 Main Rd., Miami, Florida",
-        "description": "LOCATION: Habitat Brickell is central to all the things you want to do in Miami! Explore the Financial District and take a stroll into Brickell City Center to experience some of Miami's best shopping and dining, or hop over to South Beach, just 10 minutes away by car (Rush hour traffic). The choice is yours!",
-        "price": 91,
-        "availability": "available"
-     }
+  {
+    "name": "Beach Front Home",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660570695/ThisSite/beachfront-tahoe1_mgavrf.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660570700/ThisSite/beachfront-tahoe2_axm7v2.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660570696/ThisSite/beachfront-tahoe3_s89hx7.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660570697/ThisSite/beachfront-tahoe4_hw8h7e.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660570698/ThisSite/beachfront-tahoe5_lqhci3.webp"
+    ],
+    "address": "143 Cambridge St., Zephyr Cove, Nevada",
+    "description": "This is a beautiful beachfront, 3 bedroom cozy family cabin/home located in Marla Bay Zephyr Cove. The bonus room is only available in the Summer months as there is no heat in this room. Breathtaking views of Lake Tahoe from the living room, bonus room, kitchen and master bedroom! Enjoy the two outside decks for relaxation and entertainment while feeling as if you are basically sitting in the water. Panoramic views of the West shore and full sunshine year-round. Beautiful sandy beach right out the back door.",
+    "price": 683,
+    "availability": "available"
+  },
+  {
+    "name": "Luxury Lakefront Estate",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660574979/ThisSite/LX20-Lake-Tahoe1_q8nga3.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660574978/ThisSite/LX20-Lake-Tahoe2_qwy8mi.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660574979/ThisSite/LX20-Lake-Tahoe3_n8tttq.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660574982/ThisSite/LX20-Lake-Tahoe4_ti93yh.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660574982/ThisSite/LX20-Lake-Tahoe5_pmegnr.webp"
+    ],
+    "address": "2233 Broadway St., Glenbrook, Nevada",
+    "description": "Located on the Shore of Lake Tahoe and 15 minutes to South Lake Tahoe perched on this majestic clear water lake is the perfect lakefront estate accommodating up to 10 guests. Lakefront LUXE 180 degrees view Luxury Lakefront Estate in this exclusive setting for the perfect privacy. This exceptional home has breathtaking views once described by Mark Twain! To breathe the same air as the angels, you must go to Tahoe. Brand new remodeled and designer mountain top retreat with mountain views available fully furnished in Stateline, Nevada.",
+    "price": 1985,
+    "availability": "available"
+  },
+  {
+    "name": "Lakefront Tahoe Residence",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660576919/ThisSite/Lakefront-condo1_exvdvn.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660576917/ThisSite/Lakefront-condo2_yp9obj.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660576918/ThisSite/Lakefront-condo3_wyhxte.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660576918/ThisSite/Lakefront-condo4_h8kces.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660576918/ThisSite/Lakefront-condo5_mtaibl.webp"
+    ],
+    "address": "3574 Seventh Ave., Zephyr Cove, Nevada",
+    "description": "The perfect 1,700 square foot townhome steps away from a beach in a private community. Beautiful views of Lake Tahoe from the master bedroom and living room. The Lakefront Tahoe residence is in the gated Pinewild Community nestled in the pine trees near the crystal clear waters of Zephyr Cove, Nevada.",
+    "price": 422,
+    "availability": "available"
+  },
+  {
+    "name": "Better At The Lake",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660577475/ThisSite/lakefront-groveland1_tadsoa.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660577470/ThisSite/lakefront-groveland2_xrvwsm.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660577470/ThisSite/lakefront-groveland3_dqmno5.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660577475/ThisSite/lakefront-groveland4_ot0dzk.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660577471/ThisSite/lakefront-groveland5_cj4mgb.webp"
+    ],
+    "address": "2598 Third St., Groveland, California",
+    "description": "'Better At The Lake' is a lakefront home with a gorgeous view of the lake, private dock and 1-kayak.Swim from the dock! Located just 1/2-mile from Dunn Court Beach where you can stay & play or catch the seasonal water taxi & beach hop to the Marina Beach or Lake Lodge Beach! Just a 1/2-mile to community pool, country club, proshop, tennis courts",
+    "price": 558,
+    "availability": "available"
+  },
+  {
+    "name": "Luxury Twain Harte Cabin",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578218/ThisSite/twain-harte1_luktws.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578217/ThisSite/twain-harte2_sffvbe.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578218/ThisSite/twain-harte3_vnaqcb.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578213/ThisSite/twain-harte4_k18dmh.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578210/ThisSite/twain-harte5_yf5am3.webp"
+    ],
+    "address": "3254 First Ave., Twain Harte, California",
+    "description": "Luxury cabin perfect for large family gatherings, long getaways w/ friends, or peaceful mountain retreats. Enjoy the large Game Room to play pool, shuffle board & plenty to keep both Kids and Adults entertained! Beautiful deck surrounded by trees w/ a fun Fire Pit to take in the cabin vibes! Large kitchen w/ gas range, full appliances, and cute coffee supplies! Ideal for long stays. Tucked away 5 min from Downtown Twain Harte, 30 min to Pinecrest, 10 min to Black Oak Casino, & much more! Enjoy🌲",
+    "price": 272,
+    "availability": "available"
+  },
+  {
+    "name": "Discovery Bay Home",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578675/ThisSite/waterfront-marina1_ei4qgm.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578672/ThisSite/waterfront-marina2_svkccf.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578674/ThisSite/waterfront-marina3_sqvyzm.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578675/ThisSite/waterfront-marina4_x3lrva.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578673/ThisSite/waterfront-marina5_zg8poe.webp"
+    ],
+    "address": "4644 River Dr., Discover Bay, California",
+    "description": "Great Property w/ dock In Discovery Bay. Enjoy oversized deck for entertaining family & friends. W/ private dock just minutes away from fast water fun! A private 6-person hot tub for relaxation. A 50A electrical vehicle charger for your convenience. Located near major shops, restaurant, & yacht clubs. Come enjoy your next retreat.",
+    "price": 243,
+    "availability": "available"
+  },
+  {
+    "name": "Bear Creak Treehouse",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579316/ThisSite/treehouse1_zgncie.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579318/ThisSite/treehouse2_o96ldn.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579321/ThisSite/treehouse3_btyisr.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579321/ThisSite/treehouse4_oadsdo.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579317/ThisSite/treehouse5_opvsk0.webp"
+    ],
+    "address": "3544 Bear Creek Cir., Sultan, Washington",
+    "description": "Fall asleep to the sounds of Bear Creek and views of towering hemlocks in this treehouse built within a grove of old growth. A massive deck 20’ up provides elevated creek views while private hiking trails lead to thousands of acres to explore. The cabin opens to the wilderness with a 9’ folding door and full glass custom shower. Making the most of this small footprint with a Smart projector, convertible sofa bed, and queen loft.",
+    "price": 303,
+    "availability": "available"
+  },
+  {
+    "name": "Earthlight™ Villa",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578989/ThisSite/earthlight1_q1wl5i.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578985/ThisSite/earthlight2_wtbgpi.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578986/ThisSite/earthlight3_ox8p9n.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578986/ThisSite/earthlight4_pranx5.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660578986/ThisSite/earthlight5_gnrnhc.webp"
+    ],
+    "address": "3253 Earthlight Ave., Waterville, Washington ",
+    "description": "The villa on top of the world! Earthlight™ is built high atop Pioneer Ridge near Orondo, Washington. With sweeping views of the Columbia River, our unique homes are specifically designed to experience the combination of luxury living and the beauty of nature. Relax in our hot tub while watching the sun descend behind the snowy mountains. Explore our wild trekking paths in spring and summer, and snowshoe through the hills in winter. Watch the deer wander by. Earthlight™ has it all, and then some.",
+    "price": 450,
+    "availability": "available"
+  },
+  {
+    "name": "Wooded Lakefront Home",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579818/ThisSite/cabin-on-lake1_mqqkbv.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579819/ThisSite/cabin-on-lake2_wa8t8d.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579826/ThisSite/cabin-on-lake3_vhhlx8.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579825/ThisSite/cabin-on-lake4_xze6ww.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660579820/ThisSite/cabin-on-lake5_gle1ik.webp"
+    ],
+    "address": "6455 Waterfront Cir., Tahuya, Washington",
+    "description": "Enjoy a relaxing couples' getaway or bring the whole family to our beautiful wooded lakefront A-frame on a quiet, private lake perfect for seasonal swimming, floating, boating, and fishing (May-Sept). Enjoy our waterfront firepit, hot tub, ample outdoor spaces with seating and dining, and our summer water toys including a pedal boat, floaties, & paddleboard. We offer high-speed internet and a small workspace to be remote work friendly and accommodate streaming and video calling.",
+    "price": 287,
+    "availability": "available"
+  },
+  {
+    "name": "Oahu Studio",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580209/ThisSite/surfbound-retreat1_a3cj3d.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580207/ThisSite/surfbound-retreat2_kh4tf8.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580208/ThisSite/surfbound-retreat3_ranao9.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580210/ThisSite/surfbound-retreat4_yqgptu.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580209/ThisSite/surfbound-retreat5_gadsqp.webp"
+    ],
+    "address": "7855 Main st, Honolulu, Hawaii",
+    "description": "This modern studio was redesigned and redecorated with the help of my closest friends and family - with our guests at the center of our decisions. We wanted to create a space that allows you to have a dream vacation on Oahu! Parking is included, so your studio stay will be the perfect hub for your adventures on Oahu. Even without driving, some of Hawaii’s best beaches, shopping, and dining are all within walking distance: your paradise getaway awaits!",
+    "price": 125,
+    "availability": "available"
+  },
+  {
+    "name": "Island Colony",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580827/ThisSite/chic-studio1_ivgqqq.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580827/ThisSite/chic-studio2_h5o7qc.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580829/ThisSite/chic-studio3_jwyq8h.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580829/ThisSite/chic-studio4_tm9upg.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580829/ThisSite/chic-studio5_z5oc9j.webp"
+    ],
+    "address": "7553 Main St., Honolulu, Hawaii",
+    "description": "Island Colony in Waikiki is one of the popular vacation accommodations on the island. 445 Seaside Ave is in the heart of Waikiki! You are just a block away from the famous International Market Place restaurants and mall! This lovely spacious studio has a very spacious lanai (balcony) that invites the fresh Hawaiian breeze. Just a 10-15 minute stroll is famous Waikiki Beach! Parking is available in adjacent parking garage for $35/day (rates are subject to change).",
+    "price": 180,
+    "availability": "available"
+  },
+  {
+    "name": "Waikiki Home",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580568/ThisSite/mountain-view-condo1_jo8ikh.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580567/ThisSite/mountain-view-condo2_tn3qft.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580568/ThisSite/mountain-view-condo3_sc6duf.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580569/ThisSite/mountain-view-condo4_cfrnvl.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660580570/ThisSite/mountain-view-condo5_iomdyf.webp"
+    ],
+    "address": "2546 Main St., Honolulu, Hawaii",
+    "description": "Aloha! Our unit is located in the heart of Waikiki, just few minutes walk to the beach, markets, many restaurants, cafes and bars - everything is within walking distance. Enjoy your morning coffee, sunset dinners, evening cocktails and even shopping all along world famous Waikiki Beach. FREE PARKING is a Big Plus!",
+    "price": 173,
+    "availability": "available"
+  },
+  {
+    "name": "Miami Guest House",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584436/ThisSite/miami-cottage1_e2lzds.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584434/ThisSite/miami-cottage2_xvsoum.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584435/ThisSite/miami-cottage3_gxciqi.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584435/ThisSite/miami-cottage4_hspudy.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584435/ThisSite/miami-cottage5_fwpkkd.webp"
+    ],
+    "address": "6553 Main Rd., Miami, Florida",
+    "description": "This beautifully renovated space includes a queen bed, small single sofa bed (x1 child), full bathroom and a kitchenette: small refrigerator, microwave, toaster, coffee pot & stove. Outside the space has a private porch for relaxing. Our guesthouse is completely separate from the main home w/ a private entrance. We open the following common areas for your enjoyment: pool & jacuzzi! Parking for 1 car. Perfect Miami home for couples, business travelers, friends, and small families.",
+    "price": 57,
+    "availability": "available"
+  },
+  {
+    "name": "Peaceful Cottage",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584753/ThisSite/charming-cottage1_coqsno.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584752/ThisSite/charming-cottage2_tznqlf.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584753/ThisSite/charming-cottage3_xxyo0b.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584751/ThisSite/charming-cottage4_fb4rwf.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660584753/ThisSite/charming-cottage5_rzcucq.webp"
+    ],
+    "address": "2154 Main Rd., Miami, Florida",
+    "description": "Our cottage is located in a very quiet residential area, 15mn to the beach (Bal Harbor area).20mn from both Miami and Fort Lauderdale Airports, Located in the backyard of the main house but separate and with an independent entry. Enjoy our tropical garden and beautiful pool, in the back of our house. Share with owner only, we give priority to our guests to enjoy it! Parking available in our front yard. No kitchen but microwave and fridge. TV, cable and WIFI. It is suggested to have a car.",
+    "price": 102,
+    "availability": "available"
+  },
+  {
+    "name": "Habitat Brickell",
+    "images": [
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell1_gdcope.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell2_b9xydd.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell3_uhgfjs.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell4_szsgmw.webp",
+      "https://res.cloudinary.com/dv67yfa46/image/upload/v1660585145/ThisSite/habitat-brickell5_qswtms.webp"
+    ],
+    "address": "8775 Main Rd., Miami, Florida",
+    "description": "LOCATION: Habitat Brickell is central to all the things you want to do in Miami! Explore the Financial District and take a stroll into Brickell City Center to experience some of Miami's best shopping and dining, or hop over to South Beach, just 10 minutes away by car (Rush hour traffic). The choice is yours!",
+    "price": 91,
+    "availability": "available"
+  }
 ]
