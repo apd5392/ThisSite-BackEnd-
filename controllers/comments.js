@@ -32,6 +32,19 @@ try {
 }
 }
 
+const likeButton = async (req,res)=>{
+    try {
+        const {comment_id}=req.params
+        const comment = await Comment.findByPk(comment_id);
+        comment.likes +=1;
+        comment.save()
+        
+        res.send(comment)
+    } catch(error){
+        throw error
+    }
+}
+
 const deleteComment = async (req, res)=>{
     try {
         const {comment_id}=req.params
@@ -43,5 +56,5 @@ const deleteComment = async (req, res)=>{
 }
 
 module.exports = {
-    createComment, updateComment, deleteComment,
+    createComment, updateComment, deleteComment, likeButton
 }
