@@ -15,20 +15,37 @@ const getAllLocations = async (req, res) => {
   }
 }
 
-const getLocationById = async (req, res) => {
+const getHostedLocationsById = async (req, res) => {
   try {
-    const id = req.params.id
-    const location = await Location.findByPk(id, {
+    const {user_Id} = req.params
+    const locations = await Location.findAll({
+      where: {user_Id: user_Id},
       include: [
         { model: User, as: 'host' },
         { model: Comment, include: [{ model: User, as: 'commentCreator' }] }
       ]
     })
-    res.send(location)
+    res.send(locations)
   } catch (error) {
     throw error
   }
 }
+
+const getBookedLocationsById = async (req, res)=>{
+try {
+    const {user_Id}= req.params
+  
+    const locations = await Location.findAll({
+      include: [
+        {model: User, as: "bookedLocation", where: {id: user_Id}},
+        {model: Comment, include:[{ model: User, as: 'commentCreator'}]}] })
+    
+        res.send(locations)
+} catch (error) {
+  throw error
+}
+}
+
 
 const filterLocations = async (req, res) => {
   console.log(req.body)
@@ -177,7 +194,8 @@ const deleteLocation = async (req, res) => {
 
 module.exports = {
   getAllLocations,
-  getLocationById,
+  getHostedLocationsById,
+  getBookedLocationsById,
   hostLocation,
   updateLocation,
   deleteLocation,
