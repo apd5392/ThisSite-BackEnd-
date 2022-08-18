@@ -73,11 +73,7 @@ const deleteUser = async (req, res) => {
 const CheckSession = async (req, res) => {
   console.log(res.locals.payload)
   console.log(`hello`)
-<<<<<<< HEAD
   const { token } = res.locals
-=======
-  const { payload } = res.locals
->>>>>>> 04be586 (added auth route)
   console.log(payload)
 
   res.send(payload)
