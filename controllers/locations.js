@@ -72,41 +72,54 @@ const filterLocations = async (req, res) => {
         }
       }
 
-      if (cityandstate === '') {
+
+      if(cityandstate === ""){
+        if(unavailable.length>0){
         locations = await Location.findAll({
-          include: [
-            {
-              model: User,
-              as: 'bookedLocation',
-              through: { attributes: [] }
-            }
-          ],
+          include: [{
+            model: User,
+            as: "bookedLocation",
+          }],
+
           where: {
             [Op.not]: {
               id: unavailable
             }
           }
         })
-      } else {
-        locations = await Location.findAll({
-          include: [
-            {
-              model: User,
-              as: 'bookedLocation',
-              through: { attributes: [] }
-            }
-          ],
-          where: {
-            [Op.and]: {
-              [Op.not]: {
-                id: unavailable
-              },
-              address: { [Op.iLike]: `%${cityandstate}%` }
-            }
+
+}else{
+    locations = await Location.findAll({
+      include: [{
+        model: User,
+        as: "bookedLocation",
+      }]
+})}
+}else{
+        if(unavailable>0){
+          locations = await Location.findAll({
+          include: [{
+            model: User,
+            as: "bookedLocation"
+          }],
+          where: {[Op.and]:
+            {[Op.not]: {
+              id: unavailable
+            },
+          address: {[Op.iLike]: `%${cityandstate}%`}}
+
           }
         })
+      }else{
+        locations = await Location.findAll({
+          include: [{
+            model: User,
+            as: "bookedLocation"
+          }],
+          where: {address: {[Op.iLike]: `%${cityandstate}%`}}
+        })
       }
-
+}
       res.send(locations)
     }, 1000)
   } catch (error) {
