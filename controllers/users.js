@@ -73,7 +73,7 @@ const deleteUser = async (req, res) => {
 const CheckSession = async (req, res) => {
   console.log(res.locals.payload)
   console.log(`hello`)
-  const { token } = res.locals
+  const { payload } = res.locals
   console.log(payload)
 
   res.send(payload)
