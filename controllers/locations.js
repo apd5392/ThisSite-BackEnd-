@@ -1,6 +1,6 @@
 const { User, Location, Comment, Booking, Sequelize } = require('../models')
 const { cloudinary } = require('../utils/cloudinary.js')
-const {Op} = require('sequelize')
+const { Op } = require('sequelize')
 const getAllLocations = async (req, res) => {
   try {
     const locations = await Location.findAll({
@@ -30,65 +30,88 @@ const getLocationById = async (req, res) => {
   }
 }
 
-const filterLocations = async (req, res)=>{
-try {
-    const {cityandstate, start_date, end_date} = req.body
-    let unavailable = [], startBetween, endBetween, locations
+const filterLocations = async (req, res) => {
+  console.log(req.body)
+  try {
+    const { cityandstate, start_date, end_date } = req.body
+    let unavailable = [],
+      startBetween,
+      endBetween,
+      locations
 
     const bookings = await Booking.findAll()
 
-    setTimeout(async()=>{
-
-      for(let i=0; i<bookings.length; i++){
-        if(start_date >= bookings[i].start_date  && start_date <= bookings[i].end_date) startBetween = true
-        else if(start_date <= bookings[i].start_date  && end_date >= bookings[i].start_date) startBetween = true
+    setTimeout(async () => {
+      for (let i = 0; i < bookings.length; i++) {
+        if (
+          start_date >= bookings[i].start_date &&
+          start_date <= bookings[i].end_date
+        )
+          startBetween = true
+        else if (
+          start_date <= bookings[i].start_date &&
+          end_date >= bookings[i].start_date
+        )
+          startBetween = true
         else startBetween = false
 
-        if(end_date <= bookings[i].end_date  && end_date >= bookings[i].start_date) endBetween = true
-        if(end_date >= bookings[i].end_date  && start_date <= bookings[i].end_date) endBetween = true
+        if (
+          end_date <= bookings[i].end_date &&
+          end_date >= bookings[i].start_date
+        )
+          endBetween = true
+        if (
+          end_date >= bookings[i].end_date &&
+          start_date <= bookings[i].end_date
+        )
+          endBetween = true
         else endBetween = false
 
-        if(startBetween || endBetween){
-            unavailable.push(bookings[i].location_Id)
+        if (startBetween || endBetween) {
+          unavailable.push(bookings[i].location_Id)
         }
-} 
+      }
 
-      if(cityandstate === ""){
+      if (cityandstate === '') {
         locations = await Location.findAll({
-          include: [{
-            model: User,
-            as: "bookedLocation",
-            through: {attributes: []}
-          }],
+          include: [
+            {
+              model: User,
+              as: 'bookedLocation',
+              through: { attributes: [] }
+            }
+          ],
           where: {
             [Op.not]: {
               id: unavailable
             }
           }
         })
-
-      }else{
+      } else {
         locations = await Location.findAll({
-          include: [{
-            model: User,
-            as: "bookedLocation",
-            through: {attributes: []}
-          }],
-          where: {[Op.and]:
-            {[Op.not]: {
-              id: unavailable
-            },
-          address: {[Op.iLike]: `%${cityandstate}%`}}
+          include: [
+            {
+              model: User,
+              as: 'bookedLocation',
+              through: { attributes: [] }
+            }
+          ],
+          where: {
+            [Op.and]: {
+              [Op.not]: {
+                id: unavailable
+              },
+              address: { [Op.iLike]: `%${cityandstate}%` }
+            }
           }
         })
       }
 
       res.send(locations)
-},1000)
-
-} catch (error) {
-  throw error
-}
+    }, 1000)
+  } catch (error) {
+    throw error
+  }
 }
 
 const hostLocation = async (req, res) => {
@@ -136,7 +159,7 @@ const deleteLocation = async (req, res) => {
   try {
     const { id } = req.params
     await Location.destroy({ where: { id: id } })
-    res.send({message: `Location with id ${id} has been deleted`})
+    res.send({ message: `Location with id ${id} has been deleted` })
   } catch (error) {
     throw error
   }
@@ -148,5 +171,5 @@ module.exports = {
   hostLocation,
   updateLocation,
   deleteLocation,
-  filterLocations,
+  filterLocations
 }
