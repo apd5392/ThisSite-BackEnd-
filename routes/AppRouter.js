@@ -4,9 +4,9 @@ const LocationRouter = require('./LocationRouter')
 const CommentRouter = require('./CommentRouter')
 const BookingsRouter = require('./BookingsRouter')
 
-Router.use('/user',UserRouter)
-Router.use('/location',LocationRouter)
+Router.use('/user', UserRouter)
+Router.use('/location', LocationRouter)
 Router.use('/comment', CommentRouter)
-Router.use('/booking',BookingsRouter)
+Router.use('/booking', BookingsRouter)
 
-module.exports = Router 
+module.exports = Router
