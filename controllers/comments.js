@@ -1,7 +1,7 @@
 const { restart } = require('nodemon')
 const {Comment}=require('../models')
 
-const createUser = async (req, res)=>{
+const createComment = async (req, res)=>{
 try {
         const {user_id, location_id, rating, content}= req.body
     
@@ -43,5 +43,5 @@ const deleteComment = async (req, res)=>{
 }
 
 module.exports = {
-    createUser, updateComment, deleteComment,
+    createComment, updateComment, deleteComment,
 }
