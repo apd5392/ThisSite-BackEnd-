@@ -126,7 +126,7 @@ const filterLocations = async (req, res) => {
 const hostLocation = async (req, res) => {
   const imgUrls = []
   try {
-    const { images, user_Id, address, description, price } = req.body
+    const { name ,images, user_Id, address, description, price } = req.body
 
     images.forEach(async (img) => {
       const uploadedRes = await cloudinary.uploader.upload(img, {
@@ -140,6 +140,7 @@ const hostLocation = async (req, res) => {
     setTimeout(async () => {
       const location = await Location.create({
         user_Id: user_Id,
+        name: name,
         images: imgUrls,
         address: address,
         description: description,
