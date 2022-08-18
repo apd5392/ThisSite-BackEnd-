@@ -10,6 +10,7 @@ module.exports = {
       const user = await User.findOne({order: sequelize.random(), raw: true})
       return{
         user_Id: user.id,
+        name: location.name,
         images: location.images,
         address: location.address,
         description: location.description,
