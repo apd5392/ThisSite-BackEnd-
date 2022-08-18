@@ -1,3 +1,4 @@
+
 const { User, Location } = require("../models");
 const middleware = require("../middleware");
 
@@ -70,9 +71,13 @@ const deleteUser = async (req, res) => {
   res.send({ message: `User with id ${id} has been deleted` });
 };
 
+
 module.exports = {
   createUser,
   login,
   updateUser,
-  deleteUser,
-};
+  deleteUser
+}
+
+
+
