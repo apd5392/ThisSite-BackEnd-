@@ -22,8 +22,10 @@ const updateComment = async (req, res)=>{
 try {
     const {comment_id}=req.params
 
-    const comment = Comment.update(req.body, {where: {id: comment_id}, returning: true})
-
+    const comment = await Comment.update(req.body, 
+        {where: {id: comment_id},
+        returning: true})
+        
     res.send(comment)
 } catch (error) {
     throw error
