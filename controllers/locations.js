@@ -15,6 +15,21 @@ const getAllLocations = async (req, res) => {
   }
 }
 
+const getLocationById = async (req, res)=>{
+try {
+    const {id}=req.params
+    const location = await Location.findByPk(id, {
+      include: [
+        {model: User, as: "host"},
+        {model: Comment, include: [{model: User, as: 'commentCreator'}]}
+      ]
+    })
+    res.send(location)
+} catch (error) {
+  throw error
+}
+}
+
 const getHostedLocationsById = async (req, res) => {
   try {
     const {user_Id} = req.params
@@ -194,6 +209,7 @@ const deleteLocation = async (req, res) => {
 
 module.exports = {
   getAllLocations,
+  getLocationById,
   getHostedLocationsById,
   getBookedLocationsById,
   hostLocation,
