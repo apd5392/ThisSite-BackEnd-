@@ -21,11 +21,16 @@ const updateComment = async (req, res)=>{
 try {
     const {comment_id}=req.params
 
-    const comment = await Comment.update(req.body, 
+    await Comment.update(req.body, 
         {where: {id: comment_id},
-        returning: true}, {include: [{model: User, as: 'commentCreator'}]})
+        returning: true
+        })
+
+    const commentWcreator = await Comment.findByPk(comment_id,{
+        include: [{model: User, as: 'commentCreator'}]
+    })
         
-    res.send(comment)
+    res.send(commentWcreator)
 } catch (error) {
     throw error
 }
