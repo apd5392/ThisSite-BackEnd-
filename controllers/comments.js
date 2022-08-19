@@ -1,5 +1,4 @@
-const { restart } = require('nodemon')
-const {Comment}=require('../models')
+const {Comment, User}=require('../models')
 
 const createComment = async (req, res)=>{
 try {
@@ -24,7 +23,7 @@ try {
 
     const comment = await Comment.update(req.body, 
         {where: {id: comment_id},
-        returning: true})
+        returning: true}, {include: [{model: User, as: 'commentCreator'}]})
         
     res.send(comment)
 } catch (error) {
