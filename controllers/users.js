@@ -1,5 +1,6 @@
 const { User, Location } = require('../models')
 const middleware = require('../middleware')
+const { HostNotFoundError } = require('sequelize/types')
 
 const createUser = async (req, res) => {
   try {
@@ -57,9 +58,13 @@ const login = async (req, res) => {
 
 const updateUser = async (req, res) => {
   const { id } = req.params
-  const user = await User.update(req.body, {
+  await User.update(req.body, {
     where: { id: id },
     returning: true
+  })
+
+  const user = await User.findByPk(id, {
+    include: [{model: User, as: "host"}]
   })
   res.send(user)
 }
