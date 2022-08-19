@@ -2,11 +2,12 @@
   "name": "thissite-backend-",
   "version": "1.0.0",
   "description": "![Logo](https://i.imgur.com/ozgtwMJ.jpg) # .ThisSite",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "npm install && npx sequelize-cli db:migrate"
   },
   "repository": {
     "type": "git",
