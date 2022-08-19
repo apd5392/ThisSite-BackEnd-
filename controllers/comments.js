@@ -10,8 +10,12 @@ try {
             rating: rating,
             content: content
         })
+
+        const commentWcreator = await Comment.findByPk(comment.id, {
+            include: [{model: User, as: 'commentCreator'}]
+        })
     
-        res.send(comment)
+        res.send(commentWcreator)
 } catch (error) {
     throw error
 }
