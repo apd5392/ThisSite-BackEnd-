@@ -33,13 +33,10 @@ try {
 const getHostedLocationsById = async (req, res) => {
   try {
     const {user_Id} = req.params
-    const locations = await Location.findAll({
-      where: {user_Id: user_Id},
+    const locations = await User.findAll({
+      where: {id: user_Id},
       include: [
-        { model: User, as: 'host' },
-        { model: Comment, include: [{ model: User, as: 'commentCreator' }] }
-      ]
-    })
+        { model: Location, as: 'host' }] })
     res.send(locations)
   } catch (error) {
     throw error
