@@ -43,7 +43,9 @@ try {
 const likeButton = async (req,res)=>{
     try {
         const {comment_id}=req.params
-        const comment = await Comment.findByPk(comment_id);
+        const comment = await Comment.findByPk(comment_id,{
+            include: [{model: User, as: 'commentCreator'}]
+        });
         comment.likes +=1;
         comment.save()
         
@@ -56,7 +58,10 @@ const likeButton = async (req,res)=>{
 const dislikeButton = async (req, res)=>{
     try {
         const {comment_id}=req.params
-        const comment = await Comment.findByPk(comment_id);
+        const comment = await Comment.findByPk(comment_id,{
+            include: [{model: User, as: 'commentCreator'}]
+
+        });
         comment.likes -=1;
         comment.save()
         
