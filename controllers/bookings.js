@@ -62,7 +62,7 @@ const createBooking = async (req, res) => {
       }
     }, 1000)
   } catch (error) {
-    throw error
+    console.log(error)
   }
 }
 

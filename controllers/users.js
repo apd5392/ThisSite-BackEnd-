@@ -1,5 +1,7 @@
 const { User, Location } = require('../models')
 const middleware = require('../middleware')
+const { default: jwtDecode } = require('jwt-decode')
+const jwt_decode = require('jwt-decode')
 
 const createUser = async (req, res) => {
   try {
@@ -64,7 +66,7 @@ const updateUser = async (req, res) => {
   })
 
   const user = await User.findByPk(id, {
-    include: [{model: Location, as: "host"}]
+    include: [{ model: Location, as: 'host' }]
   })
 
   res.send(user)
@@ -77,12 +79,16 @@ const deleteUser = async (req, res) => {
 }
 
 const CheckSession = async (req, res) => {
-  console.log(res.locals.payload)
-  console.log(`hello`)
-  const { payload } = res.locals
-  console.log(payload)
+  console.log('checl section, ', res.locals.token)
+  const { token } = res.locals
+  const info = jwt_decode(token)
 
-  res.send(payload)
+  const user = await User.findOne({
+    where: { userName: info.userName },
+    include: [{ model: Location, as: 'host' }]
+  })
+
+  res.send(user)
 }
 
 module.exports = {

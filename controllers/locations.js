@@ -1,6 +1,7 @@
 const { User, Location, Comment, Booking, Sequelize } = require('../models')
 const { cloudinary } = require('../utils/cloudinary.js')
 const { Op } = require('sequelize')
+
 const getAllLocations = async (req, res) => {
   try {
     const locations = await Location.findAll({
@@ -9,55 +10,57 @@ const getAllLocations = async (req, res) => {
         { model: Comment, include: [{ model: User, as: 'commentCreator' }] }
       ]
     })
+
     res.send(locations)
   } catch (error) {
     throw error
   }
 }
 
-const getLocationById = async (req, res)=>{
-try {
-    const {id}=req.params
+const getLocationById = async (req, res) => {
+  try {
+    const { id } = req.params
     const location = await Location.findByPk(id, {
       include: [
-        {model: User, as: "host"},
-        {model: Comment, include: [{model: User, as: 'commentCreator'}]}
+        { model: User, as: 'host' },
+        { model: Comment, include: [{ model: User, as: 'commentCreator' }] }
       ]
     })
     res.send(location)
-} catch (error) {
-  throw error
-}
+  } catch (error) {
+    throw error
+  }
 }
 
 const getHostedLocationsById = async (req, res) => {
   try {
-    const {user_Id} = req.params
+    const { user_Id } = req.params
     const locations = await User.findAll({
-      where: {id: user_Id},
-      include: [
-        { model: Location, as: 'host' }] })
+      where: { id: user_Id },
+      include: [{ model: Location, as: 'host' }]
+    })
     res.send(locations)
   } catch (error) {
     throw error
   }
 }
 
-const getBookedLocationsById = async (req, res)=>{
-try {
-    const {user_Id}= req.params
-  
+const getBookedLocationsById = async (req, res) => {
+  try {
+    const { user_Id } = req.params
+
     const locations = await Location.findAll({
       include: [
-        {model: User, as: "bookedLocation", where: {id: user_Id}},
-        {model: Comment, include:[{ model: User, as: 'commentCreator'}]}] })
-    
-        res.send(locations)
-} catch (error) {
-  throw error
-}
-}
+        { model: User, as: 'bookedLocation', where: { id: user_Id } },
+        { model: Comment, include: [{ model: User, as: 'commentCreator' }] }
+      ]
+    })
 
+    res.send(locations)
+  } catch (error) {
+    throw error
+  }
+}
 
 const filterLocations = async (req, res) => {
   console.log(req.body)
@@ -101,50 +104,66 @@ const filterLocations = async (req, res) => {
         }
       }
 
-
-      if(cityandstate === ""){
-        if(unavailable.length>0){
-        locations = await Location.findAll({
-          include: [
-            { model: User, as: 'host' },
-            { model: Comment, include: [{ model: User, as: 'commentCreator' }] }],
-
-          where: {
-            [Op.not]: {
-              id: unavailable
-            }
-          }
-        })
-
-}else{
-    locations = await Location.findAll({
-      include: [
-        { model: User, as: 'host' },
-        { model: Comment, include: [{ model: User, as: 'commentCreator' }] }]
-})}
-}else{
-        if(unavailable>0){
+      if (cityandstate === '') {
+        if (unavailable.length > 0) {
           locations = await Location.findAll({
             include: [
               { model: User, as: 'host' },
-              { model: Comment, include: [{ model: User, as: 'commentCreator' }] }],
-          where: {[Op.and]:
-            {[Op.not]: {
-              id: unavailable
-            },
-          address: {[Op.iLike]: `%${cityandstate}%`}}
+              {
+                model: Comment,
+                include: [{ model: User, as: 'commentCreator' }]
+              }
+            ],
 
-          }
-        })
-      }else{
-        locations = await Location.findAll({
-          include: [
-            { model: User, as: 'host' },
-            { model: Comment, include: [{ model: User, as: 'commentCreator' }] }],
-          where: {address: {[Op.iLike]: `%${cityandstate}%`}}
-        })
+            where: {
+              [Op.not]: {
+                id: unavailable
+              }
+            }
+          })
+        } else {
+          locations = await Location.findAll({
+            include: [
+              { model: User, as: 'host' },
+              {
+                model: Comment,
+                include: [{ model: User, as: 'commentCreator' }]
+              }
+            ]
+          })
+        }
+      } else {
+        if (unavailable > 0) {
+          locations = await Location.findAll({
+            include: [
+              { model: User, as: 'host' },
+              {
+                model: Comment,
+                include: [{ model: User, as: 'commentCreator' }]
+              }
+            ],
+            where: {
+              [Op.and]: {
+                [Op.not]: {
+                  id: unavailable
+                },
+                address: { [Op.iLike]: `%${cityandstate}%` }
+              }
+            }
+          })
+        } else {
+          locations = await Location.findAll({
+            include: [
+              { model: User, as: 'host' },
+              {
+                model: Comment,
+                include: [{ model: User, as: 'commentCreator' }]
+              }
+            ],
+            where: { address: { [Op.iLike]: `%${cityandstate}%` } }
+          })
+        }
       }
-}
       res.send(locations)
     }, 1000)
   } catch (error) {
@@ -155,7 +174,7 @@ const filterLocations = async (req, res) => {
 const hostLocation = async (req, res) => {
   const imgUrls = []
   try {
-    const { name ,images, user_Id, address, description, price } = req.body
+    const { name, images, user_Id, address, description, price } = req.body
 
     images.forEach(async (img) => {
       const uploadedRes = await cloudinary.uploader.upload(img, {
@@ -186,7 +205,10 @@ const hostLocation = async (req, res) => {
 const updateLocation = async (req, res) => {
   try {
     const { id } = req.params
-    const location = await Location.update(req.body, { where: { id: id }, returning: true })
+    const location = await Location.update(req.body, {
+      where: { id: id },
+      returning: true
+    })
 
     res.send(location)
   } catch (error) {
