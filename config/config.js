@@ -2,7 +2,8 @@ require('dotenv').config()
 module.exports = {
   development: {
     database: 'thissite',
-    dialect: 'postgres'
+    dialect: 'postgres',
+    host: 'dpg-ccve3tkgqg460k4kvrsg-a'
   },
   test: {
     database: 'thissite',
