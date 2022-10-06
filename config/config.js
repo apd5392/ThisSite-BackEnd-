@@ -3,7 +3,9 @@ module.exports = {
   development: {
     database: 'thissite',
     dialect: 'postgres',
-    host: 'dpg-ccve3tkgqg460k4kvrsg-a'
+    host: 'dpg-ccve3tkgqg460k4kvrsg-a',
+    username: 'thissite_user',
+    password: 'bp5C9YcduKjUf8hvxM1K809FLpxKS1dI'
   },
   test: {
     database: 'thissite',
