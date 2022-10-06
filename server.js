@@ -6,8 +6,7 @@ const bodyParser = require('body-parser')
 const AppRouter = require('./routes/AppRouter')
 
 const PORT = process.env.PORT || 3001
-
-app.use(cors())
+app.use(cors({ origin: true }))
 
 app.use(bodyParser.json({ limit: '250mb' }))
 app.use(

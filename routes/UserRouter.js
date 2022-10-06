@@ -2,6 +2,8 @@ const Router = require('express').Router()
 const controller = require('../controllers/users')
 const middleware = require('../middleware')
 
+Router.get('/', (req, res) => res.json({ message: 'From user Router' }))
+
 Router.post('/signup', controller.createUser)
 Router.post('/login', controller.login)
 Router.put(

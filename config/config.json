@@ -1,16 +1,19 @@
 {
   "development": {
-    "database": "thisSite",
-    "host": "127.0.0.1",
+    "database": "thissite",
+    "username": "thissite_user",
+    "password": "bp5C9YcduKjUf8hvxM1K809FLpxKS1dI",
+    "host": "localhost",
+    "port": "5432",
     "dialect": "postgres"
   },
   "test": {
-    "database": "thisSite",
+    "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "database": "thisSite",
+    "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
